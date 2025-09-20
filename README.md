@@ -1,6 +1,6 @@
 # 🧪 Software Testing
 
-![Software Testing Illustration](https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExaGc2ZXVmcXlzYjJoMTRtMG84eXowdmh5bzF2b2xkMDNxZ25iNmJ6ayZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/GFLB1pCmhgvIDSJTvp/giphy.gif)
+![Software Testing Illustration](https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExYXI1cXNhcXYzMWdmMnZnOGVqYTg3c2c0a3pjdTFlMDZqY3Zyc3R0cSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/A06UFEx8jxEwU/giphy.gif)
 
 ## 1. Khái niệm
 
@@ -29,6 +29,45 @@
 ### 3.3. Theo mục tiêu
 - **Functional Testing**: Kiểm thử chức năng phần mềm.
 - **Non-functional Testing**: Kiểm thử hiệu năng, bảo mật, khả dụng, v.v.
+
+### 3.4. Sơ đồ phân loại chi tiết (MAIN TYPES OF SOFTWARE TESTING)
+Dựa trên phân tích hình ảnh cây sơ đồ từ tài liệu tham khảo, sơ đồ phân loại Software Testing được minh họa như sau. Sơ đồ này mở rộng các loại kiểm thử chính, bao gồm Manual Testing và Automation Testing, với các nhánh con như White Box, Black Box, Grey Box, và các loại kiểm thử cụ thể khác.
+
+Sơ đồ thể hiện cấu trúc phân cấp:
+- **Types of Software Testing** là nút gốc.
+- Phân nhánh chính: Manual Testing và Automation Testing.
+- Dưới Manual Testing: White Box (tập trung vào mã nguồn), Black Box (tập trung vào chức năng), Grey Box (kết hợp cả hai).
+- Dưới White Box: Unit Testing, Integration Testing (với Incremental và Non-Incremental), System Testing.
+- Dưới Black Box: Functional Testing, Non-Functional Testing.
+- Dưới Automation Testing và Grey Box: Performance Testing (với Load, Stress, Scalability, Stability), Usability Testing, Compatibility Testing.
+
+```mermaid
+flowchart TD
+    A[Types of Software Testing]
+    A --> B[Manual Testing]
+    A --> C[Automation Testing]
+    A --> D[Grey Box Testing]
+    B --> E[White Box]
+    B --> F[Black Box]
+    E --> G[Unit Testing]
+    E --> H[Integration Testing]
+    E --> I[System Testing]
+    H --> J[Incremental Testing]
+    H --> K[Non-Incremental Testing]
+    J --> L[Top-down]
+    J --> M[Bottom-up]
+    F --> N[Functional Testing]
+    F --> O[Non-Functional Testing]
+    O --> P[Performance Testing]
+    O --> Q[Usability Testing]
+    O --> R[Compatibility Testing]
+    P --> S[Load Testing]
+    P --> T[Stress Testing]
+    P --> U[Scalability Testing]
+    P --> V[Stability Testing]
+```
+
+Sơ đồ này giúp hình dung rõ ràng hơn về mối quan hệ giữa các loại kiểm thử, nơi Automation Testing thường áp dụng cho các kiểm thử hiệu năng và tính tương thích, trong khi Manual Testing phù hợp hơn cho kiểm thử chi tiết mã nguồn.
 
 ## 4. Quy trình kiểm thử phần mềm
 
